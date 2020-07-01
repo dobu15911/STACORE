@@ -1,0 +1,335 @@
+/* style.css */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+ul{list-style-type: none;}
+a{text-decoration: none; color: #000;}
+
+/* header 영역 */
+header {
+    width: 100%; height: 140px;
+    max-width: 1800px;
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: "NanumSquare" ,serif;
+    font-weight: 800;
+    position: relative;
+}
+header > #logo{
+    float: left;
+    margin-top: 54px;
+}
+header #gnb{
+    text-align: center;
+    float: right;
+    margin-top: 64px;
+}
+
+#gnb > ul > li{
+    display: inline-block;
+    margin-left: 92px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #666;
+    color: #000;
+    font-size: 16px;
+}
+#gnb > ul > li:first-child {margin-left: 0;}
+#gnb > ul > li:last-child{margin-right: 240px;}
+#gnb > ul > li:hover{border-bottom: 1px solid #000;}
+
+#main_header > #info {
+    width: 180px; height: 50px;
+    background: #d12b16;
+    border-radius: 5px;
+    position: absolute;
+    right: 0; top: 45px;
+    cursor: pointer;
+}
+#main_header > #info > p {
+    color: #fff;
+    position: absolute;
+    top: 18px;left: 20px;
+    font-size: 12px;
+}
+#main_header > #info >img {
+    position: absolute;
+    right: 20px; top: 18px;
+}
+
+/* visual 영역 */
+#main_visual{
+    width: 100%; height: 1200px;
+    max-width: 1800px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_visual > .v-img{
+    margin-bottom: 100px;
+}
+#main_visual > .l_box{
+    position: absolute;
+    width: 500px; height: 500px;
+    background: #d12b16;
+    top: 200px; left: 200px;
+}
+#main_visual > .l_box h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-left: 69px;
+    margin-top: 110px;
+    margin-bottom: 35px;
+}
+#main_visual > .l_box p{
+    color: #fff; font-size: 14px;
+    margin-left: 69px;
+    margin-bottom: 56px;
+}
+#main_visual > .l_box button{
+    border: none;
+    background: #fff;
+    padding: 20px 38px;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-left: 69px;
+    cursor: pointer;
+
+     /* 자간 */
+     /* letter-spacing: 1px; */
+     /* 그림자 */
+     box-shadow: 2px 2px 4px rgb(133, 133, 133);
+     /* 모션추가(전환) */
+     transition-duration: 0.4s;
+     font-family: "Roboto", sans-serif;
+     font-weight: bold;
+     overflow: hidden;
+     display: block;
+     float: left;
+}
+#main_visual > .l_box button:hover {
+    /* 효과 : 하이라이라이트, 반전 이 효과적 */
+    background: rgba(252, 160, 175, 0.7);
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+/* content 영역 */
+#content {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#content > .c-1 {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+#content h1 {
+    margin-bottom: 51px;
+}
+#content .i-con {
+    margin-bottom: 43px;
+}
+#content p {
+    margin-bottom: 67px;
+    font-size: 16px;
+}
+#content > .c-1 > .pe_eva, .monomer, .PP{
+    display: inline-block;
+}
+#content > .c-1 > .monomer{
+    margin-left: 150px;
+}
+#content > .c-1 > .PP{
+    margin-right: 0;
+    margin-left: 150px;
+}
+#content .img {margin-bottom: 100px;}
+
+/* content2영역 */
+#content2 {
+    width: 1400px; height: 505px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 145px;
+}
+#content2 span {color: #d12b16; margin-bottom: 20px; font-size: 14px;}
+#content2 h1 {font-size: 36px; margin-bottom: 35px;}
+#content2 .left {
+    width: 700px; float: left;
+}
+#content2 .left p {
+    color: #777; font-size: 14px; 
+    margin-bottom: 67px; margin-right: 20px;
+}
+#content2 .group > .group2 > p {margin-left: 20px;}
+#content2 .group > .group2 {
+    text-align: center; display: inline-block;
+}
+#content2 .group > .group2 img{margin-bottom: 26px; width: 20px;}
+#content2 .go {
+    position: relative;
+    border: none; outline: none; 
+    background: #d12b16;
+    width: 200px; height: 60px; text-align: left;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#content2 .go:hover{background: rgb(255, 46, 46); border-radius: 15px;}
+#content2 button > h3 {
+    position: absolute;
+    font-size: 14px; color: #fff; top: 22px; margin-left: 20px;
+}
+
+#content2 .go > img {
+    position: absolute;
+    top: 25px; right: 20px;
+}
+#content2 .before {
+    position: absolute;
+    left: 0; top:444px;
+    width: 60px; height: 60px;
+    border: none; 
+    outline: 2px solid #dddddd;
+    background: none;  
+}
+#content2 .before img {margin-top: 6px; margin-right: 2px;}
+#content2 .before:hover {background: rgb(255, 226, 226);}
+#content2 .next {
+    position: absolute;
+    left: 62px; top:444px;
+    width: 60px; height: 60px;
+    border: none; outline: 2px solid #dddddd;
+    background: none;  
+}
+#content2 .next img {margin-top: 6px; margin-left: 2px;}
+#content2 .next:hover {background: rgb(255, 226, 226);}
+#content2 > .right {
+    width: 699px; height: 450px; 
+    position: relative;
+    float: right;
+}
+#content2 > .right img {
+    position: absolute;
+    right: 0;
+}
+#content2 > .right > #r-img-bg {
+    width: 200px; height: 200px; 
+    background: #d12b16;
+    position: absolute;
+    z-index: -1;
+    top: 304px; left: 50px;
+}
+.Data{
+    width: 1400px; height: 315px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+.Data .video {
+    float: left;
+}
+.Data .video img:last-child{
+    position: absolute;
+    left: 183px; top: 123px;
+}
+.Data .container > .col {
+    position: relative;
+    width: 460px;
+    float: left;
+    margin-left: 70px;
+    border-bottom: 1px solid #ddd;
+    margin-right: 30px;
+}
+.Data .container > .col .c-title h1{
+    float: left;
+    margin-bottom: 37px;
+}
+.Data .container > .col .c-title img {float: right; margin-top: 10px;}
+.Data .container > .col ul{
+    list-style-type: initial; 
+    position: absolute;
+    top: 100px; left: 20px; 
+    color: #777;
+    line-height: 48px;
+}
+.Data .container > .col ul li a{color: #777;}
+.Data .container > .col .date{
+    position: absolute;
+    width: 90px;
+    left: 370px; top: 32px;
+    list-style-type: none;
+}
+.Data .container > .list {
+    position: relative;
+    width: 380px;
+    float: right;
+    top: -55px;
+    right: 0px;
+    margin-left: 40px;
+}
+.Data .container > .list ul li{line-height: 70px; border-bottom: 1px solid #ddd;}
+.Data .container > .list ul li:hover{background: rgb(196, 196, 196); border-radius: 10px;}
+.Data .container > .list ul li a p{font-size: 16px; font-weight: bold; color: #222222;}
+.Data .container > .list ul li a img{
+    position: absolute;
+    width: 8px;
+    float: right;
+    right: 30px;
+    margin-top: 30px;
+}
+#footer{
+    width: 100%; height: 200px;
+    max-width: 1800px;
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: "NanumSquare" ,serif;
+    position: relative;
+}
+#footer > #f-logo {
+    position: absolute;
+    margin-top: 60px;
+}
+#footer h4{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 50px;
+    color: #777;
+    font-size: 13px;
+}
+#footer h4 span {opacity: 0.5;}
+#footer p {
+    position: absolute;
+    margin-top: 82px;
+    margin-left: 50px;
+    color: #777;
+    font-size: 12px;
+}
+#footer .Privacy {
+    position: absolute;
+    right: 122px; top: 60px;
+    width: 120px; height: 40px;
+    background: #000;
+    border-radius: 5px;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+}
+#footer .Privacy:hover{background: rgb(63, 63, 63);}
+
+#footer .map {
+    position: absolute;
+    right: 0px; top: 60px;
+    width: 120px; height: 40px;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 5px;
+    outline: none;
+    color: #777;
+    cursor: pointer;
+}
+#footer .map:hover{background: rgb(221, 221, 221);}
